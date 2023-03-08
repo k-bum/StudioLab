@@ -12,3 +12,5 @@ RGB 이미지의 각 픽셀을 기준으로 K-means clustering을 통해 의류 
 
 
 ![test_image_1](https://user-images.githubusercontent.com/96854885/223710985-8f586d8b-7e28-473e-9ef0-2f4b4dd6cdf8.png)
+
+![result_1](https://user-images.githubusercontent.com/96854885/223711127-4916273d-2b1d-4b98-a855-bb1f6d7be1b2.png)
