@@ -16,4 +16,8 @@ RGB 이미지의 각 픽셀을 기준으로 K-means clustering을 통해 의류 
 
 위에서 언급한 Python의 라이브러리 extcolors를 사용한 결과는 다음과 같다
 
-![result_1](https://user-images.githubusercontent.com/96854885/223711127-4916273d-2b1d-4b98-a855-bb1f6d7be1b2.png)
+![result_1](https://user-images.githubusercontent.com/96854885/223711127-4916273d-2b1d-4b98-a855-bb1f6d7be1b2.png)  
+
+직접 색상을 추출한 결과는 다음과 같다  
+
+![result_2](https://user-images.githubusercontent.com/96854885/223711811-a1c268ca-8eb1-4110-8499-391a830ac981.png)
