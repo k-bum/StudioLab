@@ -19,4 +19,8 @@ RGB 이미지의 각 픽셀을 기준으로 K-means clustering을 통해 의류 
 직접 색상을 추출한 결과는 다음과 같다  
 ![result_2](https://user-images.githubusercontent.com/96854885/223711811-a1c268ca-8eb1-4110-8499-391a830ac981.png)  
 
-2. crawler 관리페이지 
+2. crawler 관리페이지 개발  
+초기에는 다양한 쇼핑몰의 크롤러를 개발해 하나의 컴퓨터에서 multi-processing을 활용해 병렬적으로 처리하거나 AWS의 EC2를 활용해 여러 개의 크롤러를 동시에 구현  
+하지만, 크롤링된 이미지를 데이터팀과 공유하고 이미지들을 pose-compositon model을 활용해 filtering하는 과정에서 비효율적인 업무를 자동화하기 위해 다수의 크롤러를 생성하고 구동하는 것을 시작으로 크롤링된 이미지를 필터링, 다운로드까지 하나의 pipeline으로 진행하기 위해 django와 django rest framework를 활용해 크롤러 관리 페이지 개발  
+- 주요 기능 소개  
+
