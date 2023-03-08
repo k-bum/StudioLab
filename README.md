@@ -33,3 +33,5 @@ RGB 이미지의 각 픽셀을 기준으로 K-means clustering을 통해 의류 
 8. 크롤링된 이미지 어트리뷰트 기준 또는 모델 유무, 모델의 포즈 기준으로 필터링 후 .zip 파일로 다운로드  
 9. 최종 개발 완료된 페이지 배포(AWS)
 
+3. SEO(Search engine optimization) 및 문장 생성 api test  
+네이버 연관검색어 api와 카카오브레인의 KoGPT api 활용  
