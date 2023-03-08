@@ -19,4 +19,4 @@ RGB 이미지의 각 픽셀을 기준으로 K-means clustering을 통해 의류 
 직접 색상을 추출한 결과는 다음과 같다  
 ![result_2](https://user-images.githubusercontent.com/96854885/223711811-a1c268ca-8eb1-4110-8499-391a830ac981.png)  
 
-2. crawler manager
+2. crawler 관리페이지 
