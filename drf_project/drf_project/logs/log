@@ -1,0 +1,200 @@
+ERROR 2023-02-08 11:09:45,916 log 6516 12944207872 Internal Server Error: /crawler_api/project/1/crawler/
+Traceback (most recent call last):
+  File "/Users/kyebeomjeon/workspace/Studio_Lab/Django_Project/venv_web/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/Users/kyebeomjeon/workspace/Studio_Lab/Django_Project/venv_web/lib/python3.9/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/kyebeomjeon/workspace/Studio_Lab/Django_Project/venv_web/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/kyebeomjeon/workspace/Studio_Lab/Django_Project/venv_web/lib/python3.9/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/kyebeomjeon/workspace/Studio_Lab/Django_Project/venv_web/lib/python3.9/site-packages/rest_framework/views.py", line 511, in dispatch
+    self.response = self.finalize_response(request, response, *args, **kwargs)
+  File "/Users/kyebeomjeon/workspace/Studio_Lab/Django_Project/venv_web/lib/python3.9/site-packages/rest_framework/views.py", line 423, in finalize_response
+    assert isinstance(response, HttpResponseBase), (
+AssertionError: Expected a `Response`, `HttpResponse` or `HttpStreamingResponse` to be returned from the view, but received a `<class 'coroutine'>`
+ERROR 2023-02-08 11:09:45,917 basehttp 6516 12944207872 "POST /crawler_api/project/1/crawler/ HTTP/1.1" 500 79370
+ERROR 2023-02-08 11:10:17,231 log 6569 13039484928 Internal Server Error: /crawler_api/project/1/crawler/
+Traceback (most recent call last):
+  File "/Users/kyebeomjeon/workspace/Studio_Lab/Django_Project/venv_web/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/Users/kyebeomjeon/workspace/Studio_Lab/Django_Project/venv_web/lib/python3.9/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/kyebeomjeon/workspace/Studio_Lab/Django_Project/venv_web/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/kyebeomjeon/workspace/Studio_Lab/Django_Project/venv_web/lib/python3.9/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/kyebeomjeon/workspace/Studio_Lab/Django_Project/venv_web/lib/python3.9/site-packages/rest_framework/views.py", line 511, in dispatch
+    self.response = self.finalize_response(request, response, *args, **kwargs)
+  File "/Users/kyebeomjeon/workspace/Studio_Lab/Django_Project/venv_web/lib/python3.9/site-packages/rest_framework/views.py", line 423, in finalize_response
+    assert isinstance(response, HttpResponseBase), (
+AssertionError: Expected a `Response`, `HttpResponse` or `HttpStreamingResponse` to be returned from the view, but received a `<class 'coroutine'>`
+ERROR 2023-02-08 11:10:17,232 basehttp 6569 13039484928 "POST /crawler_api/project/1/crawler/ HTTP/1.1" 500 79370
+ERROR 2023-02-08 11:15:13,598 log 6972 12954898432 Internal Server Error: /crawler_api/project/1/crawler/
+Traceback (most recent call last):
+  File "/Users/kyebeomjeon/workspace/Studio_Lab/Django_Project/venv_web/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/Users/kyebeomjeon/workspace/Studio_Lab/Django_Project/venv_web/lib/python3.9/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/kyebeomjeon/workspace/Studio_Lab/Django_Project/venv_web/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/kyebeomjeon/workspace/Studio_Lab/Django_Project/venv_web/lib/python3.9/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/kyebeomjeon/workspace/Studio_Lab/Django_Project/venv_web/lib/python3.9/site-packages/rest_framework/views.py", line 511, in dispatch
+    self.response = self.finalize_response(request, response, *args, **kwargs)
+  File "/Users/kyebeomjeon/workspace/Studio_Lab/Django_Project/venv_web/lib/python3.9/site-packages/rest_framework/views.py", line 423, in finalize_response
+    assert isinstance(response, HttpResponseBase), (
+AssertionError: Expected a `Response`, `HttpResponse` or `HttpStreamingResponse` to be returned from the view, but received a `<class 'coroutine'>`
+ERROR 2023-02-08 11:15:13,599 basehttp 6972 12954898432 "POST /crawler_api/project/1/crawler/ HTTP/1.1" 500 79370
+ERROR 2023-02-08 11:15:48,113 log 7034 12973588480 Internal Server Error: /crawler_api/project/1/crawler/
+Traceback (most recent call last):
+  File "/Users/kyebeomjeon/workspace/Studio_Lab/Django_Project/venv_web/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/Users/kyebeomjeon/workspace/Studio_Lab/Django_Project/venv_web/lib/python3.9/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/kyebeomjeon/workspace/Studio_Lab/Django_Project/venv_web/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/kyebeomjeon/workspace/Studio_Lab/Django_Project/venv_web/lib/python3.9/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/kyebeomjeon/workspace/Studio_Lab/Django_Project/venv_web/lib/python3.9/site-packages/rest_framework/views.py", line 511, in dispatch
+    self.response = self.finalize_response(request, response, *args, **kwargs)
+  File "/Users/kyebeomjeon/workspace/Studio_Lab/Django_Project/venv_web/lib/python3.9/site-packages/rest_framework/views.py", line 423, in finalize_response
+    assert isinstance(response, HttpResponseBase), (
+AssertionError: Expected a `Response`, `HttpResponse` or `HttpStreamingResponse` to be returned from the view, but received a `<class 'coroutine'>`
+ERROR 2023-02-08 11:15:48,113 basehttp 7034 12973588480 "POST /crawler_api/project/1/crawler/ HTTP/1.1" 500 79370
+ERROR 2023-02-08 11:43:33,445 log 9034 13085802496 Internal Server Error: /crawler_api/project/1/crawler/
+Traceback (most recent call last):
+  File "/Users/kyebeomjeon/workspace/Studio_Lab/Django_Project/venv_web/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/Users/kyebeomjeon/workspace/Studio_Lab/Django_Project/venv_web/lib/python3.9/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/kyebeomjeon/workspace/Studio_Lab/Django_Project/venv_web/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/kyebeomjeon/workspace/Studio_Lab/Django_Project/venv_web/lib/python3.9/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/kyebeomjeon/workspace/Studio_Lab/Django_Project/venv_web/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/kyebeomjeon/workspace/Studio_Lab/Django_Project/venv_web/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/kyebeomjeon/workspace/Studio_Lab/Django_Project/venv_web/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/kyebeomjeon/workspace/Studio_Lab/Django_Project/venv_web/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/kyebeomjeon/workspace/Studio_Lab/Django_Project/drf_git/drf_project/crawler_api/views.py", line 211, in post
+    return self.create(request, *args, **kwargs)
+  File "/Users/kyebeomjeon/workspace/Studio_Lab/Django_Project/drf_git/drf_project/crawler_api/views.py", line 188, in create
+    self.perform_create(serializer)
+  File "/Users/kyebeomjeon/workspace/Studio_Lab/Django_Project/drf_git/drf_project/crawler_api/views.py", line 176, in perform_create
+    loop = asyncio.get_event_loop()
+  File "/Users/kyebeomjeon/Downloads/anaconda3/lib/python3.9/asyncio/events.py", line 642, in get_event_loop
+    raise RuntimeError('There is no current event loop in thread %r.'
+RuntimeError: There is no current event loop in thread 'Thread-1'.
+ERROR 2023-02-08 11:43:33,446 basehttp 9034 13085802496 "POST /crawler_api/project/1/crawler/ HTTP/1.1" 500 108991
+ERROR 2023-02-08 11:48:03,631 log 9352 13034713088 Internal Server Error: /crawler_api/project/1/crawler/
+Traceback (most recent call last):
+  File "/Users/kyebeomjeon/workspace/Studio_Lab/Django_Project/venv_web/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/Users/kyebeomjeon/workspace/Studio_Lab/Django_Project/venv_web/lib/python3.9/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/kyebeomjeon/workspace/Studio_Lab/Django_Project/venv_web/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/kyebeomjeon/workspace/Studio_Lab/Django_Project/venv_web/lib/python3.9/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/kyebeomjeon/workspace/Studio_Lab/Django_Project/venv_web/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/kyebeomjeon/workspace/Studio_Lab/Django_Project/venv_web/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/kyebeomjeon/workspace/Studio_Lab/Django_Project/venv_web/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/kyebeomjeon/workspace/Studio_Lab/Django_Project/venv_web/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/kyebeomjeon/workspace/Studio_Lab/Django_Project/drf_git/drf_project/crawler_api/views.py", line 230, in post
+    loop.run_until_complete(future)
+  File "/Users/kyebeomjeon/Downloads/anaconda3/lib/python3.9/asyncio/base_events.py", line 647, in run_until_complete
+    return future.result()
+  File "/Users/kyebeomjeon/workspace/Studio_Lab/Django_Project/drf_git/drf_project/crawler_api/views.py", line 204, in async_create
+    copied_data['project']=self.kwargs['project_pk']
+AttributeError: 'ListCreateAPIView' object has no attribute 'kwargs'
+ERROR 2023-02-08 11:48:03,632 basehttp 9352 13034713088 "POST /crawler_api/project/1/crawler/ HTTP/1.1" 500 102752
+ERROR 2023-02-08 15:23:15,621 log 17204 12956069888 Internal Server Error: /crawler_api/project/1/crawler/
+Traceback (most recent call last):
+  File "/Users/kyebeomjeon/workspace/Studio_Lab/Django_Project/venv_web/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/Users/kyebeomjeon/workspace/Studio_Lab/Django_Project/venv_web/lib/python3.9/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/kyebeomjeon/workspace/Studio_Lab/Django_Project/venv_web/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/kyebeomjeon/workspace/Studio_Lab/Django_Project/venv_web/lib/python3.9/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/kyebeomjeon/workspace/Studio_Lab/Django_Project/venv_web/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/kyebeomjeon/workspace/Studio_Lab/Django_Project/venv_web/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/kyebeomjeon/workspace/Studio_Lab/Django_Project/venv_web/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/kyebeomjeon/workspace/Studio_Lab/Django_Project/venv_web/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/kyebeomjeon/workspace/Studio_Lab/Django_Project/drf_git/drf_project/crawler_api/views.py", line 208, in post
+    return self.create(request, *args, **kwargs)
+  File "/Users/kyebeomjeon/workspace/Studio_Lab/Django_Project/drf_git/drf_project/crawler_api/views.py", line 185, in create
+    asyncio.run(self.perform_create(serializer))
+  File "/Users/kyebeomjeon/Downloads/anaconda3/lib/python3.9/asyncio/runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "/Users/kyebeomjeon/Downloads/anaconda3/lib/python3.9/asyncio/base_events.py", line 647, in run_until_complete
+    return future.result()
+  File "/Users/kyebeomjeon/workspace/Studio_Lab/Django_Project/drf_git/drf_project/crawler_api/views.py", line 174, in perform_create
+    instance = serializer.save()
+  File "/Users/kyebeomjeon/workspace/Studio_Lab/Django_Project/venv_web/lib/python3.9/site-packages/rest_framework/serializers.py", line 212, in save
+    self.instance = self.create(validated_data)
+  File "/Users/kyebeomjeon/workspace/Studio_Lab/Django_Project/venv_web/lib/python3.9/site-packages/rest_framework/serializers.py", line 962, in create
+    instance = ModelClass._default_manager.create(**validated_data)
+  File "/Users/kyebeomjeon/workspace/Studio_Lab/Django_Project/venv_web/lib/python3.9/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/kyebeomjeon/workspace/Studio_Lab/Django_Project/venv_web/lib/python3.9/site-packages/django/db/models/query.py", line 453, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/Users/kyebeomjeon/workspace/Studio_Lab/Django_Project/venv_web/lib/python3.9/site-packages/django/db/models/base.py", line 739, in save
+    self.save_base(using=using, force_insert=force_insert,
+  File "/Users/kyebeomjeon/workspace/Studio_Lab/Django_Project/venv_web/lib/python3.9/site-packages/django/db/models/base.py", line 776, in save_base
+    updated = self._save_table(
+  File "/Users/kyebeomjeon/workspace/Studio_Lab/Django_Project/venv_web/lib/python3.9/site-packages/django/db/models/base.py", line 881, in _save_table
+    results = self._do_insert(cls._base_manager, using, fields, returning_fields, raw)
+  File "/Users/kyebeomjeon/workspace/Studio_Lab/Django_Project/venv_web/lib/python3.9/site-packages/django/db/models/base.py", line 919, in _do_insert
+    return manager._insert(
+  File "/Users/kyebeomjeon/workspace/Studio_Lab/Django_Project/venv_web/lib/python3.9/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/kyebeomjeon/workspace/Studio_Lab/Django_Project/venv_web/lib/python3.9/site-packages/django/db/models/query.py", line 1270, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "/Users/kyebeomjeon/workspace/Studio_Lab/Django_Project/venv_web/lib/python3.9/site-packages/django/db/models/sql/compiler.py", line 1414, in execute_sql
+    with self.connection.cursor() as cursor:
+  File "/Users/kyebeomjeon/workspace/Studio_Lab/Django_Project/venv_web/lib/python3.9/site-packages/django/utils/asyncio.py", line 31, in inner
+    raise SynchronousOnlyOperation(message)
+django.core.exceptions.SynchronousOnlyOperation: You cannot call this from an async context - use a thread or sync_to_async.
+ERROR 2023-02-08 15:23:15,623 basehttp 17204 12956069888 "POST /crawler_api/project/1/crawler/ HTTP/1.1" 500 184225
+ERROR 2023-02-08 15:43:47,074 log 18858 13085097984 Internal Server Error: /crawler_api/project/1/crawler/
+Traceback (most recent call last):
+  File "/Users/kyebeomjeon/workspace/Studio_Lab/Django_Project/venv_web/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/Users/kyebeomjeon/workspace/Studio_Lab/Django_Project/venv_web/lib/python3.9/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/kyebeomjeon/workspace/Studio_Lab/Django_Project/venv_web/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/kyebeomjeon/workspace/Studio_Lab/Django_Project/venv_web/lib/python3.9/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/kyebeomjeon/workspace/Studio_Lab/Django_Project/venv_web/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/kyebeomjeon/workspace/Studio_Lab/Django_Project/venv_web/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/kyebeomjeon/workspace/Studio_Lab/Django_Project/venv_web/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/kyebeomjeon/workspace/Studio_Lab/Django_Project/venv_web/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/kyebeomjeon/workspace/Studio_Lab/Django_Project/drf_git/drf_project/crawler_api/views.py", line 209, in post
+    return self.create(request, *args, **kwargs)
+  File "/Users/kyebeomjeon/workspace/Studio_Lab/Django_Project/drf_git/drf_project/crawler_api/views.py", line 186, in create
+    self.perform_create(serializer)
+  File "/Users/kyebeomjeon/workspace/Studio_Lab/Django_Project/drf_git/drf_project/crawler_api/views.py", line 178, in perform_create
+    if not asyncio.get_event_loop().is_closed():
+  File "/Users/kyebeomjeon/Downloads/anaconda3/lib/python3.9/asyncio/events.py", line 642, in get_event_loop
+    raise RuntimeError('There is no current event loop in thread %r.'
+RuntimeError: There is no current event loop in thread 'Thread-1'.
+ERROR 2023-02-08 15:43:47,075 basehttp 18858 13085097984 "POST /crawler_api/project/1/crawler/ HTTP/1.1" 500 109119
