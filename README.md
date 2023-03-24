@@ -81,15 +81,15 @@ extcolors 라이브러리를 사용한 결과
 
 직접 색상 추출을 진행한 결과
 
-![대상 의류 이미지](Color%20Extraction%2002eba4ada63745b891b58b3684986103/Untitled%204.png)
+![image2](https://user-images.githubusercontent.com/96854885/227514346-89ded40c-4fc5-4f8a-a6a7-02bd18eb38ab.png)
 
 대상 의류 이미지
 
-![extcolors 라이브러리를 사용한 결과](Color%20Extraction%2002eba4ada63745b891b58b3684986103/Untitled%205.png)
+![result3](https://user-images.githubusercontent.com/96854885/227514393-6572956a-9ae7-417b-acc4-23d85993403e.png)
 
 extcolors 라이브러리를 사용한 결과
 
-![직접 색상 추출을 진행한 결과](Color%20Extraction%2002eba4ada63745b891b58b3684986103/Untitled%206.png)
+![result4](https://user-images.githubusercontent.com/96854885/227514443-d943c672-3146-4be6-8e93-041076687303.png)
 
 직접 색상 추출을 진행한 결과
 
@@ -117,7 +117,7 @@ extcolors 라이브러리를 사용한 결과
     
     사진 속 객체를 box가 아닌 정확한 영역으로 표시 (object detection 보다 세부적)한다. 특정 객체만 표시하는 것이 아니라 이미지 pixel 전체에 걸쳐서 객체를 구분하여 각 객체의 영역을 표시한다. 
     
-    ![Untitled](Color%20Extraction%2002eba4ada63745b891b58b3684986103/Untitled%207.png)
+    ![Untitled](https://user-images.githubusercontent.com/96854885/227514675-07ca9383-fcf3-429b-8f4e-8a896d02295e.png)
     
     <Image Segmentation 의 종류>
     
@@ -127,11 +127,11 @@ extcolors 라이브러리를 사용한 결과
     
     결과적으로 이미지가 주어졌을 때, 각 픽셀이 클래스의 정보를 포함하는 하나의 분할 맵을 생성한다. 각 픽셀마다 N개의 클래스에 대한 확률을 포함해야 하므로 높이 * 너비 * N의 형태를 갖는다.
     
-    ![Untitled](Color%20Extraction%2002eba4ada63745b891b58b3684986103/Untitled%208.png)
+    ![Untitled2](https://user-images.githubusercontent.com/96854885/227515018-2921a152-f277-4820-9e97-af06075c82af.png)
     
     2) **Instance Segmentaion**
     
-    ![Untitled](Color%20Extraction%2002eba4ada63745b891b58b3684986103/Untitled%209.png)
+    ![Untitled3](https://user-images.githubusercontent.com/96854885/227515069-a513b081-2844-4df3-a68b-b1b9feb52244.png)
     
     Semantic Segmentaion의 경우 이미지 내 여러 객체가 존재하더라도 객체 자체를 추출한다. 즉, 이미지에서 여러 사람이 존재하더라도 같은 label로 나타낸다. 하지만, Instance Segmentation의 경우 하나의 이미지에 여러 사람이 존재하는 경우 각 객체에 대해 다른 label로 나타낸다.
     
@@ -158,15 +158,15 @@ extcolors 라이브러리를 사용한 결과
         ![Untitled](Color%20Extraction%2002eba4ada63745b891b58b3684986103/Untitled%2011.png)
         
     
-    ![원본 이미지](Color%20Extraction%2002eba4ada63745b891b58b3684986103/Untitled%2012.png)
+    ![Untitled4](https://user-images.githubusercontent.com/96854885/227515144-fd24f783-aeef-4d6d-baab-8ce99648b2b8.png)
     
     원본 이미지
     
-    ![마스크 이미지](Color%20Extraction%2002eba4ada63745b891b58b3684986103/Untitled%2013.png)
-    
+    ![Untitled5](https://user-images.githubusercontent.com/96854885/227515193-ac86b502-8b71-4297-aac7-8b9d111d4f06.png)
+
     마스크 이미지
     
-    ![전처리 후 이미지](Color%20Extraction%2002eba4ada63745b891b58b3684986103/Untitled%2014.png)
+    ![Untitled6](https://user-images.githubusercontent.com/96854885/227515239-a151daf6-08c4-419f-bab7-2f50aaf5fc11.png)
     
     전처리 후 이미지
     
