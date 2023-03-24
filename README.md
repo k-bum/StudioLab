@@ -105,7 +105,7 @@ bounding box 예시
     
 문제점) 하지만, grabcut의 경우 배경이 완벽하게 제거되지 않는다는 문제점과 초기 bounding box에 의해 성능이 좌우된다는 문제점이 있어, 좀 더 배경을 완벽하게 제거하기 위해 기존에 구현된 rembg 라이브러리를 활용해 전처리 진행했다. rembg는 딥러닝 모델 중 U2-net을 활용해 배경을 제거한다. 총 830장의 label이 없는 RGB 3 채널 의류 이미지에 대해  rembg 라이브러리를 활용해 RGBA 4 채널 의류 이미지 PNG파일로 변환했다.
     
-    ```python
+```python
     import numpy as np
     from rembg import remove
     import cv2
@@ -115,7 +115,7 @@ bounding box 예시
         input = cv2.imread(input_path)
         output = remove(input)
         cv2.imwrite(output_path, output)
-    ```
+```
 <결과 이미지>   
 <img src="https://user-images.githubusercontent.com/96854885/227516160-80701473-10d3-41f9-8d42-4b9f6e763ac1.png" width="200" height="200"/>
 
