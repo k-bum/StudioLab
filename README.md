@@ -140,10 +140,10 @@ def rgb_to_hex(r, g, b) :
 #133490<br/>
 <img src="https://user-images.githubusercontent.com/96854885/227522201-16316e60-a2f3-4bd7-9823-2b81b10ce3be.png" width="200" height="200"/>
 
-#e6371e<br/>
+#161b27<br/>
 <img src="https://user-images.githubusercontent.com/96854885/227522243-32cb3af1-d08f-4bb3-9faf-5cab09a5c272.png" width="200" height="200"/>
 
-#161b27<br/>
+#e6371e<br/>
 <img src="https://user-images.githubusercontent.com/96854885/227522297-118e1c3b-d345-4478-a4be-7802f1dfb8ef.png" width="200" height="200"/>
 
 #255fde<br/>
