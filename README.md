@@ -30,7 +30,7 @@ RGB 이미지의 각 픽셀을 기준으로 K-means clustering을 통해 의류 
     
     특정 데이터를 기준으로 가장 근접한 k개의 데이터가 영역 내에 들어올 때까지 영역을 확장한다. 영역 내 데이터 중 더 많은 cluster로 결정한다.
     
-    ![k = 3인 경우, 영역 내에 주황색 점이 2개로 더 많기 때문에 *은 주황색 cluster에 속한다. ](Color%20Extraction%2002eba4ada63745b891b58b3684986103/Untitled.png)
+    ![k = 3인 경우, 영역 내에 주황색 점이 2개로 더 많기 때문에 *은 주황색 cluster에 속한다. ](![KNN](https://user-images.githubusercontent.com/96854885/227512912-3f62c422-a053-4ff6-b01e-a0a78d369e3f.png)
     
     k = 3인 경우, 영역 내에 주황색 점이 2개로 더 많기 때문에 *은 주황색 cluster에 속한다. 
     
