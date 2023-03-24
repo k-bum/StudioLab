@@ -131,33 +131,27 @@ def rgb_to_hex(r, g, b) :
     return '#' + hex(r)[2:].zfill(2) + hex(g)[2:].zfill(2) + hex(b)[2:].zfill(2)
 ```
 
-![대상 이미지](Color%20Extraction%2002eba4ada63745b891b58b3684986103/Untitled%2021.png)
-
 대상 이미지
-
-![5개의 색상 추출 결과](Color%20Extraction%2002eba4ada63745b891b58b3684986103/Untitled%2022.png)
+<img src="https://user-images.githubusercontent.com/96854885/227522056-5ccef4ca-d29f-4646-ae2f-14842ad5d2f7.png" width="200" height="200"/>
 
 5개의 색상 추출 결과
-
-![#133490](Color%20Extraction%2002eba4ada63745b891b58b3684986103/Untitled%2023.png)
+<img src="https://user-images.githubusercontent.com/96854885/227522117-ea5a907b-6372-4f49-82a2-a08ae83690bc.png" width="200" height="200"/>
 
 #133490
-
-![#e6371e](Color%20Extraction%2002eba4ada63745b891b58b3684986103/Untitled%2024.png)
+<img src="https://user-images.githubusercontent.com/96854885/227522201-16316e60-a2f3-4bd7-9823-2b81b10ce3be.png" width="200" height="200"/>
 
 #e6371e
-
-![#161b27](Color%20Extraction%2002eba4ada63745b891b58b3684986103/Untitled%2025.png)
+<img src="https://user-images.githubusercontent.com/96854885/227522243-32cb3af1-d08f-4bb3-9faf-5cab09a5c272.png" width="200" height="200"/>
 
 #161b27
-
-![#255fde](Color%20Extraction%2002eba4ada63745b891b58b3684986103/Untitled%2026.png)
+<img src="https://user-images.githubusercontent.com/96854885/227522297-118e1c3b-d345-4478-a4be-7802f1dfb8ef.png" width="200" height="200"/>
 
 #255fde
-
-![#3e773e](Color%20Extraction%2002eba4ada63745b891b58b3684986103/Untitled%2027.png)
+<img src="https://user-images.githubusercontent.com/96854885/227522347-cac8b9af-5034-431b-939f-281ab973609e.png" width="200" height="200"/>
 
 #3e773e
+<img src="https://user-images.githubusercontent.com/96854885/227522386-e202305d-5cde-4252-9874-3685494032a3.png" width="200" height="200"/>
+
 
 # crawler 관리페이지 개발  
 초기에는 다양한 쇼핑몰의 크롤러를 개발해 하나의 컴퓨터에서 multi-processing을 활용해 병렬적으로 처리하거나 AWS의 EC2를 활용해 여러 개의 크롤러를 동시에 구현  
