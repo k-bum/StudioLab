@@ -68,11 +68,10 @@ from PIL import Image
 img = Image.open('/Users/kyebeomjeon/workspace/Studio_Lab/saved_png/removed_bg_28.png').convert('RGBA')
 colors, pixel_count = extcolors.extract_from_image(img, limit = 5)
 ```
-
-![image1](https://user-images.githubusercontent.com/96854885/227513732-3576047f-5fa5-4849-a2df-e29899119b0d.png)
+<img src="https://user-images.githubusercontent.com/96854885/227513732-3576047f-5fa5-4849-a2df-e29899119b0d.png" width="200" height="400"/>
 대상 의류 이미지
 
-![result1](https://user-images.githubusercontent.com/96854885/227513789-dedd9b2e-2699-4842-aa78-ef35b68fb719.png)
+<img src="https://user-images.githubusercontent.com/96854885/227513789-dedd9b2e-2699-4842-aa78-ef35b68fb719.png" width="200" height="400"/>
 extcolors 라이브러리를 사용한 결과
 
 ![result2](https://user-images.githubusercontent.com/96854885/227513846-eccf583f-6f27-429f-9f76-43cde3040eae.png)
