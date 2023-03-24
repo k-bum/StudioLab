@@ -2,6 +2,8 @@
 This is my internship record for 2 months(studiolab ML team)
 
 ## Main tasks
+1. Color Extraction
+2. Crawler 관리 페이지 개발(Django Rest Framework)
 
 # Color Extraction
 
