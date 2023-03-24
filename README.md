@@ -69,15 +69,15 @@ img = Image.open('/Users/kyebeomjeon/workspace/Studio_Lab/saved_png/removed_bg_2
 colors, pixel_count = extcolors.extract_from_image(img, limit = 5)
 ```
 
-![대상 의류 이미지](Color%20Extraction%2002eba4ada63745b891b58b3684986103/Untitled%201.png)
+![대상 의류 이미지]![image1](https://user-images.githubusercontent.com/96854885/227513732-3576047f-5fa5-4849-a2df-e29899119b0d.png)
 
 대상 의류 이미지
 
-![extcolors 라이브러리를 사용한 결과](Color%20Extraction%2002eba4ada63745b891b58b3684986103/Untitled%202.png)
+![extcolors 라이브러리를 사용한 결과]![result1](https://user-images.githubusercontent.com/96854885/227513789-dedd9b2e-2699-4842-aa78-ef35b68fb719.png)
 
 extcolors 라이브러리를 사용한 결과
 
-![직접 색상 추출을 진행한 결과](Color%20Extraction%2002eba4ada63745b891b58b3684986103/Untitled%203.png)
+![직접 색상 추출을 진행한 결과]![result2](https://user-images.githubusercontent.com/96854885/227513846-eccf583f-6f27-429f-9f76-43cde3040eae.png)
 
 직접 색상 추출을 진행한 결과
 
