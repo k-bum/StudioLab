@@ -149,13 +149,13 @@ extcolors 라이브러리를 사용한 결과
         
         Canny edge detection을 활용해 이미지 내 객체의 윤곽선을 검출한 후 해당 객체를 최대한 포함하면서, 가장 작은 bounding box를 찾아 배경과 객체를 구분해 grabcut 알고리즘을 적용한다. 이때, 이미지에서 노이즈가 있을 경우 윤곽선 검출이 어려울 수 있기 때문에 gaussian filter를 적용해 이미지의 노이즈를 줄인다. 이후 openCV의 cv2.Canny를 활용해 윤곽선을 검출한다.
         
-        ![Canny를 활용한 윤곽선 검출](Color%20Extraction%2002eba4ada63745b891b58b3684986103/Untitled%2010.png)
+        ![a](https://user-images.githubusercontent.com/96854885/227515784-aadbc162-50fc-457d-8218-14e184ceb336.png)
         
         Canny를 활용한 윤곽선 검출
         
         <bounding box 예시>
         
-        ![Untitled](Color%20Extraction%2002eba4ada63745b891b58b3684986103/Untitled%2011.png)
+        ![b](https://user-images.githubusercontent.com/96854885/227515860-f155b0f6-c343-4a1e-be81-1482b8395d83.png)
         
     
     ![Untitled4](https://user-images.githubusercontent.com/96854885/227515144-fd24f783-aeef-4d6d-baab-8ce99648b2b8.png)
