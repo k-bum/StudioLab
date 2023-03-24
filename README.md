@@ -70,27 +70,21 @@ colors, pixel_count = extcolors.extract_from_image(img, limit = 5)
 ```
 
 ![image1](https://user-images.githubusercontent.com/96854885/227513732-3576047f-5fa5-4849-a2df-e29899119b0d.png)
-
 대상 의류 이미지
 
 ![result1](https://user-images.githubusercontent.com/96854885/227513789-dedd9b2e-2699-4842-aa78-ef35b68fb719.png)
-
 extcolors 라이브러리를 사용한 결과
 
 ![result2](https://user-images.githubusercontent.com/96854885/227513846-eccf583f-6f27-429f-9f76-43cde3040eae.png)
-
 직접 색상 추출을 진행한 결과
 
 ![image2](https://user-images.githubusercontent.com/96854885/227514346-89ded40c-4fc5-4f8a-a6a7-02bd18eb38ab.png)
-
 대상 의류 이미지
 
 ![result3](https://user-images.githubusercontent.com/96854885/227514393-6572956a-9ae7-417b-acc4-23d85993403e.png)
-
 extcolors 라이브러리를 사용한 결과
 
 ![result4](https://user-images.githubusercontent.com/96854885/227514443-d943c672-3146-4be6-8e93-041076687303.png)
-
 직접 색상 추출을 진행한 결과
 
 해당 이미지는 쇼핑몰의 의류 이미지를 크롤링한 이미지 데이터로 이미지 내 객체에 대해서만 색상을 추출하기 위해서 image segmentation을 통해 이미지에 대해 전처리하는 과정을 진행한 후 clustering 진행
@@ -111,21 +105,16 @@ Canny edge detection을 활용해 이미지 내 객체의 윤곽선을 검출한
         
 Canny를 활용한 윤곽선 검출
         
-<bounding box 예시>
-        
 ![b](https://user-images.githubusercontent.com/96854885/227515860-f155b0f6-c343-4a1e-be81-1482b8395d83.png)
-        
+bounding box 예시
     
 ![Untitled4](https://user-images.githubusercontent.com/96854885/227515144-fd24f783-aeef-4d6d-baab-8ce99648b2b8.png)
-    
 원본 이미지
     
 ![Untitled5](https://user-images.githubusercontent.com/96854885/227515193-ac86b502-8b71-4297-aac7-8b9d111d4f06.png)
-
 마스크 이미지
     
-![Untitled6](https://user-images.githubusercontent.com/96854885/227515239-a151daf6-08c4-419f-bab7-2f50aaf5fc11.png)
-    
+![Untitled6](https://user-images.githubusercontent.com/96854885/227515239-a151daf6-08c4-419f-bab7-2f50aaf5fc11.png)  
 전처리 후 이미지
     
 문제점) 하지만, grabcut의 경우 배경이 완벽하게 제거되지 않는다는 문제점과 초기 bounding box에 의해 성능이 좌우된다는 문제점이 있어, 좀 더 배경을 완벽하게 제거하기 위해 기존에 구현된 rembg 라이브러리를 활용해 전처리 진행했다. rembg는 딥러닝 모델 중 U2-net을 활용해 배경을 제거한다. 총 830장의 label이 없는 RGB 3 채널 의류 이미지에 대해  rembg 라이브러리를 활용해 RGBA 4 채널 의류 이미지 PNG파일로 변환했다.
@@ -141,8 +130,8 @@ Canny를 활용한 윤곽선 검출
         output = remove(input)
         cv2.imwrite(output_path, output)
     ```
-    
-    ![removed_bg_0](https://user-images.githubusercontent.com/96854885/227516160-80701473-10d3-41f9-8d42-4b9f6e763ac1.png)
+<결과 이미지>   
+![removed_bg_0](https://user-images.githubusercontent.com/96854885/227516160-80701473-10d3-41f9-8d42-4b9f6e763ac1.png)
 
 하지만, clustering의 경우 unsupervised learning에 해당하기 때문에 추출된 색상이 얼마나 잘 추출된 것인지에 대한 평가 기준이 모호했고, 도출된 결과를 평가하기 위한 방법을 고민하는 과정에서 정량적인 방법은 아니지만 clustering된 전체 픽셀 중에서 각각의 특정 색상(cluster)에 속하는 픽셀을 제외하고 masking처리를 한다면 어떤 픽셀을 어떤 색상에 clustering한 것인지 설명이 가능하도록 하는 것이 가능할 것이라고 생각했다. 이를 기준으로 결과를 평가했다. 이를 활용해 이미지에서 어둡거나 그늘진 부분이나 이미지 전처리 과정에서 발생한 오류를 결과에서 배제하기 위해 일부 픽셀을 제거하고 clustering을 반복적으로 진행함으로써 성능을 개선했다. 하지만, K-means 알고리즘의 특성 상 결과가 k에 의존적이라는 근본적인 문제점은 있었다. 적절한 k를 찾기 위해 사이킷런의 gridsearch 방법을 활용했고 이미지에서 최대 5개의 색상을 추출하는 업무를 진행했다. 
 
