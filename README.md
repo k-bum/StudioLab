@@ -6,7 +6,6 @@ This is my internship record for 2 months(studiolab ML team)
 # Color Extraction
 
 의류 상세 페이지 내 의류 이미지가 어떤 색상의 옷인지에 대한 정보 제공을 위해서 의류 이미지 색상 추출 업무를 진행
-
 RGB 이미지의 각 픽셀을 기준으로 K-means clustering을 통해 의류 이미지의 객체에 대해 k개의 색상 추출을 진행
 
 <대표적인 clustering 알고리즘>
@@ -33,32 +32,21 @@ RGB 이미지의 각 픽셀을 기준으로 K-means clustering을 통해 의류 
 - **DBSCAN**
     
     **Density-based spatial clustering of applications with noise**
-    
     밀도 기반의 클러스터링은 점이 세밀하게 몰려 있어서 밀도가 높은 부분을 클러스터링하는 방법이다.
-    
     어느 점(p)을 기준으로 반경 x내에 점이 n개 이상 있으면 하나의 군집으로 인식한다.
-    
     점 P1(core point)에서 부터 반경 e(epsilon)내에 점이 m(minPts) 개 이상 있으면 하나의 군집으로 인식한다. 반경 내에 다른 core point P2가 포함이 되어 있는 경우 core point P1과 P2는 연결되어 있다고 하고 하나의 군집으로 묶이게 된다. 
-    
     어떤 점을 중심으로 하더라도 minPts를 만족하는 범위에 포함이 되지 않는다면 즉, 어느 군집에도 속하지 않는 outlier가 되는데, 이를 noise point라고 한다.
-    
     DBSCAN의 장점은 클러스터의 개수를 미리 지정할 필요가 없으며 노이즈를 효과적으로 제거할 수 있다는 것이다. 
     
 - **Mean-shift**
     
     K-means와 유사하게 중심을 계속 이동하면서 클러스터링을 수행한다. 하지만, K-means는 군집 중심이 소속된 평균 거리를 중심으로 이동하는 것에 반해, Mean-shift는 군집 중심이 데이터가 모여 있는 밀도 높은 곳으로 이동한다. 
-    
     평균 이동은 데이터의 분포도를 이용해 군집 중심점을 찾는다. 군집 중심점은 데이터 모여 있는 곳이라는 생각에서 착안한 것이며 이를 위해 확률 밀도 함수(P.D.F)를 이용한다. 
-    
     가장 집중적으로 데이터가 모여있어 확률 밀도 함수 값이 가장 큰 점을 군집 중심점으로 선정한다.
-    
     일반적으로 주어진 모델의 확률 밀도로 함수를 찾기 위해서 KDE(Kernel Density Estimation)을 이용한다.
-    
     평균 이동 알고리즘은 임의의 포인트에서 시작해 이러한 피크 포인트를 찾을 때까지 KDE를 반복적으로 적용하며 군집화를 수행한다.
-    
     평균 이동은 K-평균과 다르게 군집의 개수를 지정할 필요가 없다. 대역폭의 크기에 따라 알고리즘 자체에서 군집의 개수를 최적으로 정한다.
     
-
 기존에 이미 구현된 Python의 라이브러리 extcolors를 사용해서 색상 추출을 진행한 결과와 비교했을 때 속도는 좀 더 느리지만, 성능이 더 좋다고 판단된다. 색상 추출 결과는 Image segmentation의 성능에 따라서 달라질 수 있는데, 결과를 비교해보면 extcolors에 비해 좀 더 robust하다고 판단할 수 있다.
 
 ```python
@@ -69,22 +57,22 @@ img = Image.open('/Users/kyebeomjeon/workspace/Studio_Lab/saved_png/removed_bg_2
 colors, pixel_count = extcolors.extract_from_image(img, limit = 5)
 ```
 대상 의류 이미지<br/>
-<img src="https://user-images.githubusercontent.com/96854885/227513732-3576047f-5fa5-4849-a2df-e29899119b0d.png" width="400" height="500"/>
+<img src="https://user-images.githubusercontent.com/96854885/227513732-3576047f-5fa5-4849-a2df-e29899119b0d.png" width="400" height="500"/><br/>
 
 extcolors 라이브러리를 사용한 결과<br/>
-<img src="https://user-images.githubusercontent.com/96854885/227513789-dedd9b2e-2699-4842-aa78-ef35b68fb719.png" width="400" height="500"/>
+<img src="https://user-images.githubusercontent.com/96854885/227513789-dedd9b2e-2699-4842-aa78-ef35b68fb719.png" width="400" height="500"/><br/>
 
 직접 색상 추출을 진행한 결과<br/>
-<img src="https://user-images.githubusercontent.com/96854885/227513846-eccf583f-6f27-429f-9f76-43cde3040eae.png" width="400" height="500"/>
+<img src="https://user-images.githubusercontent.com/96854885/227513846-eccf583f-6f27-429f-9f76-43cde3040eae.png" width="400" height="500"/><br/>
 
 대상 의류 이미지<br/>
-<img src="https://user-images.githubusercontent.com/96854885/227514346-89ded40c-4fc5-4f8a-a6a7-02bd18eb38ab.png" width="400" height="500"/>
+<img src="https://user-images.githubusercontent.com/96854885/227514346-89ded40c-4fc5-4f8a-a6a7-02bd18eb38ab.png" width="400" height="500"/><br/>
 
 extcolors 라이브러리를 사용한 결과<br/>
-<img src="https://user-images.githubusercontent.com/96854885/227514393-6572956a-9ae7-417b-acc4-23d85993403e.png" width="400" height="500"/>
+<img src="https://user-images.githubusercontent.com/96854885/227514393-6572956a-9ae7-417b-acc4-23d85993403e.png" width="400" height="500"/><br/>
 
 직접 색상 추출을 진행한 결과<br/>
-<img src="https://user-images.githubusercontent.com/96854885/227514443-d943c672-3146-4be6-8e93-041076687303.png" width="400" height="500"/>
+<img src="https://user-images.githubusercontent.com/96854885/227514443-d943c672-3146-4be6-8e93-041076687303.png" width="400" height="500"/><br/>
 
 해당 이미지는 쇼핑몰의 의류 이미지를 크롤링한 이미지 데이터로 이미지 내 객체에 대해서만 색상을 추출하기 위해서 image segmentation을 통해 이미지에 대해 전처리하는 과정을 진행한 후 clustering 진행
 
