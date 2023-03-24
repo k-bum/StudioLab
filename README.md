@@ -117,10 +117,6 @@ extcolors 라이브러리를 사용한 결과
     
     사진 속 객체를 box가 아닌 정확한 영역으로 표시 (object detection 보다 세부적)한다. 특정 객체만 표시하는 것이 아니라 이미지 pixel 전체에 걸쳐서 객체를 구분하여 각 객체의 영역을 표시한다. 
     
-    ![Untitled](https://user-images.githubusercontent.com/96854885/227514675-07ca9383-fcf3-429b-8f4e-8a896d02295e.png)
-    
-    <Image Segmentation 의 종류>
-    
     1) **Semantic Segmentation**
     
     실제로 인식할 수 있는 물리적 의미 단위(semantic)로 인식하는 세그멘테이션을 시멘틱 세그멘테이션(semantic segmentation)이라고 한다. 즉, 이미지에서 픽셀을 사람, 자동차, 비행기 등의 물리적 단위로 분류하는 방법이다.
@@ -184,50 +180,7 @@ extcolors 라이브러리를 사용한 결과
         cv2.imwrite(output_path, output)
     ```
     
-    [removed_bg_0.png](Color%20Extraction%2002eba4ada63745b891b58b3684986103/removed_bg_0.png)
-    
-    ![removed_bg_0.png](Color%20Extraction%2002eba4ada63745b891b58b3684986103/removed_bg_0%201.png)
-    
-- **U-net**
-    
-    U-net은 MICCAI에서 발표한 논문에서 고안된 구조로, label이 있는 데이터가 적을 때 상황에서도 정확한 image segmantation 성능을 보였다.
-    
-    ![전체 U-net 구조](Color%20Extraction%2002eba4ada63745b891b58b3684986103/Untitled%2015.png)
-    
-    전체 U-net 구조
-    
-    autoencoder와 유사하게 encoder와 decoder 기반 모델로서, 수축 경로(contracting path)에서 해상도를 줄였다가 확장 경로(expansive path)를 거치면서 해상도를 늘린다. 수축 경로에서는 입력 이미지의 특징을 추출할 수 있도록 채널의 수를 늘리면서 차원을 축소하고, 확장 경로에서는 채널의 수를 줄이고 차원을 늘려서 고차원 이미지로 복원한다. U-net은 수축 과정에서 이미지 내 객체의 위치 정보 손실을 방지하고자, encoder layer와 decoder layer를 직접 연결하는 skip connection을 활용한다. 즉, 인코딩 단계에서 얻은 특징을 디코딩 단계에 concatenation을 함으로써 정보 손실을 방지한다. 
-    
-    <Contracting path>
-    
-    ![Untitled](Color%20Extraction%2002eba4ada63745b891b58b3684986103/Untitled%2016.png)
-    
-    2x2 max pooling을 사용해 해상도는 감소시키고, 컨볼루션 연산을 통해 채널의 수는 2배로 늘린다. padding은 진행하지 않았으므로 컨볼루션 연산마다 해상도는 감소한다. 일반적인 CNN 모델과 같이 컨볼루션 연산 → ReLU → max pooling을 반복한다.
-    
-    <Expansive path>
-    
-    ![Untitled](Color%20Extraction%2002eba4ada63745b891b58b3684986103/Untitled%2017.png)
-    
-    2x2 up convolution을 통해 해상도는 2배 증가시키고, convolution filter의 수를 줄여서 채널의 수는 감소시킨다. 또한, 수축 경로의 feature map을 그대로 가져와서 연결한다. (Resnet의 residual connection과 유사)
-    
-    <U-net 학습 방법>
-    
-    픽셀 단위로 예측을 진행하고, softmax 함수를 사용한다. 또한 손실함수로 cross-entropy를 사용한다. 
-    
-    ![x는 픽셀의 위치로 2차원 값을 갖는다. k는 클래스의 개수이다. a는 네트워크의 출력을 의미한다. ](Color%20Extraction%2002eba4ada63745b891b58b3684986103/Untitled%2018.png)
-    
-    x는 픽셀의 위치로 2차원 값을 갖는다. k는 클래스의 개수이다. a는 네트워크의 출력을 의미한다. 
-    
-    ![w(x)라는 추가적인 가중치 함수를 사용해 각 픽셀마다 가중치를 부여한다.](Color%20Extraction%2002eba4ada63745b891b58b3684986103/Untitled%2019.png)
-    
-    w(x)라는 추가적인 가중치 함수를 사용해 각 픽셀마다 가중치를 부여한다.
-    
-    w(x)는 인접한 셀 사이에 있는 배경 레이블에 대해 더 높은 가중치를 부여한다. 따라서 세포 간의 거리가 가까우면 더 높은 가중치를 부여한다. 따라서 서로 인접한 셀을 더 명확하게 분리한다.  
-    
-    ![d1과 d2는 각각 경계와 가장 가까운 셀 간, 두번째로 가까운 셀 간의 거리이다. ](Color%20Extraction%2002eba4ada63745b891b58b3684986103/Untitled%2020.png)
-    
-    d1과 d2는 각각 경계와 가장 가까운 셀 간, 두번째로 가까운 셀 간의 거리이다. 
-    
+    ![removed_bg_0](https://user-images.githubusercontent.com/96854885/227516160-80701473-10d3-41f9-8d42-4b9f6e763ac1.png)
 
 하지만, clustering의 경우 unsupervised learning에 해당하기 때문에 추출된 색상이 얼마나 잘 추출된 것인지에 대한 평가 기준이 모호했고, 도출된 결과를 평가하기 위한 방법을 고민하는 과정에서 정량적인 방법은 아니지만 clustering된 전체 픽셀 중에서 각각의 특정 색상(cluster)에 속하는 픽셀을 제외하고 masking처리를 한다면 어떤 픽셀을 어떤 색상에 clustering한 것인지 설명이 가능하도록 하는 것이 가능할 것이라고 생각했다. 이를 기준으로 결과를 평가했다. 이를 활용해 이미지에서 어둡거나 그늘진 부분이나 이미지 전처리 과정에서 발생한 오류를 결과에서 배제하기 위해 일부 픽셀을 제거하고 clustering을 반복적으로 진행함으로써 성능을 개선했다. 하지만, K-means 알고리즘의 특성 상 결과가 k에 의존적이라는 근본적인 문제점은 있었다. 적절한 k를 찾기 위해 사이킷런의 gridsearch 방법을 활용했고 이미지에서 최대 5개의 색상을 추출하는 업무를 진행했다. 
 
