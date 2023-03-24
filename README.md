@@ -68,29 +68,23 @@ from PIL import Image
 img = Image.open('/Users/kyebeomjeon/workspace/Studio_Lab/saved_png/removed_bg_28.png').convert('RGBA')
 colors, pixel_count = extcolors.extract_from_image(img, limit = 5)
 ```
+대상 의류 이미지
 <img src="https://user-images.githubusercontent.com/96854885/227513732-3576047f-5fa5-4849-a2df-e29899119b0d.png" width="400" height="500"/>
-대상 의류 이미지
 
-
+extcolors 라이브러리를 사용한 결과
 <img src="https://user-images.githubusercontent.com/96854885/227513789-dedd9b2e-2699-4842-aa78-ef35b68fb719.png" width="400" height="500"/>
-extcolors 라이브러리를 사용한 결과
 
-
+직접 색상 추출을 진행한 결과
 <img src="https://user-images.githubusercontent.com/96854885/227513846-eccf583f-6f27-429f-9f76-43cde3040eae.png" width="400" height="500"/>
-직접 색상 추출을 진행한 결과
 
-
-<img src="https://user-images.githubusercontent.com/96854885/227514346-89ded40c-4fc5-4f8a-a6a7-02bd18eb38ab.png" width="400" height="500"/>
 대상 의류 이미지
+<img src="https://user-images.githubusercontent.com/96854885/227514346-89ded40c-4fc5-4f8a-a6a7-02bd18eb38ab.png" width="400" height="500"/>
 
-
-<img src="https://user-images.githubusercontent.com/96854885/227514393-6572956a-9ae7-417b-acc4-23d85993403e.png" width="400" height="500"/>
 extcolors 라이브러리를 사용한 결과
+<img src="https://user-images.githubusercontent.com/96854885/227514393-6572956a-9ae7-417b-acc4-23d85993403e.png" width="400" height="500"/>
 
-
-<img src="https://user-images.githubusercontent.com/96854885/227514443-d943c672-3146-4be6-8e93-041076687303.png" width="400" height="500"/>
 직접 색상 추출을 진행한 결과
-
+<img src="https://user-images.githubusercontent.com/96854885/227514443-d943c672-3146-4be6-8e93-041076687303.png" width="400" height="500"/>
 
 해당 이미지는 쇼핑몰의 의류 이미지를 크롤링한 이미지 데이터로 이미지 내 객체에 대해서만 색상을 추출하기 위해서 image segmentation을 통해 이미지에 대해 전처리하는 과정을 진행한 후 clustering 진행
 
