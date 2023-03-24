@@ -95,42 +95,6 @@ extcolors 라이브러리를 사용한 결과
 
 해당 이미지는 쇼핑몰의 의류 이미지를 크롤링한 이미지 데이터로 이미지 내 객체에 대해서만 색상을 추출하기 위해서 image segmentation을 통해 이미지에 대해 전처리하는 과정을 진행한 후 clustering 진행
 
-- **Image segmentation(이미지 분할)**
-    
-    <이미지 처리의 종류>
-    
-    1) **Image Classification**
-    
-    이미지의 객체가 어떤 것인지 구분하는 것(예를 들면 이미지가 고양이인지 강아지인지를 구분)
-    
-    2) **Image Localization**
-    
-    이미지 속 특정 객체에 box를 쳐서 객체가 어디있는지 표시
-    
-    3) **Object Detection**
-    
-    이미지 속 여러 객체를 각각 구별하여 각각을 box로 표시
-    
-    4) **Image Segmentation**
-    
-    각 픽셀마다 class를 할당하는 작업
-    
-    사진 속 객체를 box가 아닌 정확한 영역으로 표시 (object detection 보다 세부적)한다. 특정 객체만 표시하는 것이 아니라 이미지 pixel 전체에 걸쳐서 객체를 구분하여 각 객체의 영역을 표시한다. 
-    
-    1) **Semantic Segmentation**
-    
-    실제로 인식할 수 있는 물리적 의미 단위(semantic)로 인식하는 세그멘테이션을 시멘틱 세그멘테이션(semantic segmentation)이라고 한다. 즉, 이미지에서 픽셀을 사람, 자동차, 비행기 등의 물리적 단위로 분류하는 방법이다.
-    
-    결과적으로 이미지가 주어졌을 때, 각 픽셀이 클래스의 정보를 포함하는 하나의 분할 맵을 생성한다. 각 픽셀마다 N개의 클래스에 대한 확률을 포함해야 하므로 높이 * 너비 * N의 형태를 갖는다.
-    
-    ![Untitled2](https://user-images.githubusercontent.com/96854885/227515018-2921a152-f277-4820-9e97-af06075c82af.png)
-    
-    2) **Instance Segmentaion**
-    
-    ![Untitled3](https://user-images.githubusercontent.com/96854885/227515069-a513b081-2844-4df3-a68b-b1b9feb52244.png)
-    
-    Semantic Segmentaion의 경우 이미지 내 여러 객체가 존재하더라도 객체 자체를 추출한다. 즉, 이미지에서 여러 사람이 존재하더라도 같은 label로 나타낸다. 하지만, Instance Segmentation의 경우 하나의 이미지에 여러 사람이 존재하는 경우 각 객체에 대해 다른 label로 나타낸다.
-    
     색상 추출 과정 중 이미지에 배경이 포함되는 경우에 배경색이 결과에 포함될 수 있기 때문에 모든 이미지에 대해 객체를 제외하고 배경을 제거하는 전처리 과정을 진행 
     
     → 이미지 pixel 전체에 걸쳐 객체를 구분하고, 객체를 제외한 부분은 masking 처리해 제거 (GrabCut 알고리즘 적용)
