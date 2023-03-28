@@ -65,21 +65,21 @@ grabcut은 그래프 컷(graph cut)기반 영역 분할 알고리즘으로 그�
 → 영상의 픽셀을 그래프 정점으로 간주하고, 픽셀들을 두 개의 그룹(객체 그룹, 배경 그룹)으로 분할하는 최적의 컷(Max Flow Minimum Cut)을 찾는 방식
         
 Canny edge detection을 활용해 이미지 내 객체의 윤곽선을 검출한 후 해당 객체를 최대한 포함하면서, 가장 작은 bounding box를 찾아 배경과 객체를 구분해 grabcut 알고리즘을 적용한다. 이때, 이미지에서 노이즈가 있을 경우 윤곽선 검출이 어려울 수 있기 때문에 gaussian filter를 적용해 이미지의 노이즈를 줄인다. 이후 openCV의 cv2.Canny를 활용해 윤곽선을 검출한다.
-        
+
+Canny를 활용한 윤곽선 검출<br/>
 ![a](https://user-images.githubusercontent.com/96854885/227515784-aadbc162-50fc-457d-8218-14e184ceb336.png)  
-Canny를 활용한 윤곽선 검출
-        
+    
+bounding box 예시<br/>
 ![b](https://user-images.githubusercontent.com/96854885/227515860-f155b0f6-c343-4a1e-be81-1482b8395d83.png)
-bounding box 예시
-    
+ 
+원본 이미지<br/>
 ![Untitled4](https://user-images.githubusercontent.com/96854885/227515144-fd24f783-aeef-4d6d-baab-8ce99648b2b8.png)
-원본 이미지
     
+마스크 이미지<br/>
 ![Untitled5](https://user-images.githubusercontent.com/96854885/227515193-ac86b502-8b71-4297-aac7-8b9d111d4f06.png)
-마스크 이미지
-    
+ 
+전처리 후 이미지<br/>
 ![Untitled6](https://user-images.githubusercontent.com/96854885/227515239-a151daf6-08c4-419f-bab7-2f50aaf5fc11.png)  
-전처리 후 이미지
     
 문제점) 하지만, grabcut의 경우 배경이 완벽하게 제거되지 않는다는 문제점과 초기 bounding box에 의해 성능이 좌우된다는 문제점이 있어, 좀 더 배경을 완벽하게 제거하기 위해 기존에 구현된 rembg 라이브러리를 활용해 전처리 진행했다. rembg는 딥러닝 모델 중 U2-net을 활용해 배경을 제거한다. 총 830장의 label이 없는 RGB 3 채널 의류 이미지에 대해  rembg 라이브러리를 활용해 RGBA 4 채널 의류 이미지 PNG파일로 변환했다.
     
