@@ -107,7 +107,7 @@ def rgb_to_hex(r, g, b) :
 <img src="https://user-images.githubusercontent.com/96854885/227522056-5ccef4ca-d29f-4646-ae2f-14842ad5d2f7.png" width="300" height="300"/>
 <img src="https://user-images.githubusercontent.com/96854885/227522117-ea5a907b-6372-4f49-82a2-a08ae83690bc.png" width="300" height="300"/>
 
-[#133490, #161b27, #e6371e, #255fde, #3e773e]<br/>
+hex code = [#133490, #161b27, #e6371e, #255fde, #3e773e]<br/>
 <img src="https://user-images.githubusercontent.com/96854885/227522201-16316e60-a2f3-4bd7-9823-2b81b10ce3be.png" width="200" height="200"/>
 <img src="https://user-images.githubusercontent.com/96854885/227522243-32cb3af1-d08f-4bb3-9faf-5cab09a5c272.png" width="200" height="200"/>
 <img src="https://user-images.githubusercontent.com/96854885/227522297-118e1c3b-d345-4478-a4be-7802f1dfb8ef.png" width="200" height="200"/>
