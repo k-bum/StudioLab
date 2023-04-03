@@ -35,13 +35,16 @@ img = Image.open('/Users/kyebeomjeon/workspace/Studio_Lab/saved_png/removed_bg_2
 colors, pixel_count = extcolors.extract_from_image(img, limit = 5)
 ```
 대상 의류 이미지<br/>
-<img src="https://user-images.githubusercontent.com/96854885/227513732-3576047f-5fa5-4849-a2df-e29899119b0d.png" width="200" height="200"/><br/>
+<img src="https://user-images.githubusercontent.com/96854885/227513732-3576047f-5fa5-4849-a2df-e29899119b0d.png" width="200" height="200"/>
+<img src="https://user-images.githubusercontent.com/96854885/227514346-89ded40c-4fc5-4f8a-a6a7-02bd18eb38ab.png" width="200" height="200"/><br/>
 
 extcolors 라이브러리를 사용한 결과<br/>
-<img src="https://user-images.githubusercontent.com/96854885/227513789-dedd9b2e-2699-4842-aa78-ef35b68fb719.png" width="200" height="200"/><br/>
+<img src="https://user-images.githubusercontent.com/96854885/227513789-dedd9b2e-2699-4842-aa78-ef35b68fb719.png" width="200" height="200"/>
+<img src="https://user-images.githubusercontent.com/96854885/227514393-6572956a-9ae7-417b-acc4-23d85993403e.png" width="200" height="200"/><br/>
 
 직접 색상 추출을 진행한 결과<br/>
-<img src="https://user-images.githubusercontent.com/96854885/227513846-eccf583f-6f27-429f-9f76-43cde3040eae.png" width="200" height="200"/><br/>
+<img src="https://user-images.githubusercontent.com/96854885/227513846-eccf583f-6f27-429f-9f76-43cde3040eae.png" width="200" height="200"/>
+<img src="https://user-images.githubusercontent.com/96854885/227514443-d943c672-3146-4be6-8e93-041076687303.png" width="200" height="200"/><br/>
 
 대상 의류 이미지<br/>
 <img src="https://user-images.githubusercontent.com/96854885/227514346-89ded40c-4fc5-4f8a-a6a7-02bd18eb38ab.png" width="200" height="200"/><br/>
