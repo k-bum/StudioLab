@@ -118,8 +118,8 @@ hex code = [#133490, #161b27, #e6371e, #255fde, #3e773e]<br/>
 # crawler 관리페이지 개발  
 초기에는 다양한 쇼핑몰의 크롤러를 개발해 하나의 컴퓨터에서 multi-thread을 활용해 병렬적으로 처리하거나 AWS의 EC2를 활용해 여러 개의 크롤러를 동시에 구현  
 하지만, 크롤링된 이미지를 데이터팀과 공유하고 이미지들을 pose-compositon model을 활용해 filtering하는 과정에서 비효율적인 업무를 자동화하기 위해 다수의 크롤러를 생성하고 구동하는 것을 시작으로 크롤링된 이미지를 필터링, 다운로드까지 하나의 pipeline으로 진행하기 위해 django와 django rest framework를 활용해 크롤러 관리 페이지 개발<br/>
-<DB 구조>
-<img width="478" alt="스크린샷 2023-04-11 시간: 17 44 07" src="https://user-images.githubusercontent.com/96854885/231106121-0ca9aef3-67c9-42cc-9890-be62f0745512.png">
+<DB 구조><br>
+<img src="https://user-images.githubusercontent.com/96854885/231106425-35cc6fd6-bf13-4752-b7d1-07d2352ac6be.png" width="400" height="400"/>
 
 <서버 실행><br/>
 ```bash
