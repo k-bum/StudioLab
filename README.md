@@ -139,4 +139,5 @@ python manage.py run_batch
 7. 크롤링된 이미지 DB에 저장 및 mysql 연동  
 8. 크롤링된 이미지 어트리뷰트 기준 또는 모델 유무, 모델의 포즈 기준으로 필터링 후 .zip 파일로 다운로드  
 9. 최종 개발 완료된 페이지 배포(AWS)
-
+<br/>
+<img src="https://user-images.githubusercontent.com/96854885/231389776-df348100-51c1-44b7-9dc3-8ed9d7afdce1.png" width="400" height="500"/>
